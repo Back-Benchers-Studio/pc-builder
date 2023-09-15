@@ -40,3 +40,56 @@
 .read-the-docs {
   color: #888;
 }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Center the content vertically and horizontally */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: white; 
+}
+
+/* Style the grey container */
+.grey-container {
+  background-color: #e2e4e8; 
+  width: 90vw; 
+  height: 80vh;
+  border-radius: 8px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Style the blueish container inside the grey container */
+.blueish-container {
+  background-color: #3f496f;
+  width: 85%;
+  height: 75%;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.white-container {
+  background-color: white;
+  width: 60%; /* Adjust the width as needed */
+  height: 100%; /* Set height to 100% to match the height of the blueish container */
+  position: absolute; /* Use absolute positioning */
+  top: 0;
+  right: 0; /* Position from the right side */
+  border-top: 8px solid transparent; /* Transparent border for the top side */
+  border-right: 8px solid #fff; /* White border for the right side */
+  border-bottom: 8px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
