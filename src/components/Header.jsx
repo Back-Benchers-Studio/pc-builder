@@ -1,14 +1,29 @@
-import { Link } from "react-router-dom";
+function Header(){
+    return (
+      <>
+        <div className="logo-container">
+          <a href="#" className="logo-text">
+            PC Builder
+          </a>
+        </div>
+        <div className="white-container"></div>
 
-function Header (){
-    return(
-        <header>
-            <h1>React</h1>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">contact</Link>
-        </header>
-    )
+        <div className="top-right-links">
+          <a href="#" className="link">
+            PCs
+          </a>
+          <a href="#" className="link">
+            Delivery
+          </a>
+          <a href="#" className="link">
+            Contact
+          </a>
+          <a href="#" className="cart-icon">
+            🛒
+          </a>
+        </div>
+      </>
+    );
 }
 
-export default Header;
+export default Header

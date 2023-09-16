@@ -1,18 +1,18 @@
-import Header from "../components/Header";
+import Configrator from "../components/Configrator";
 import { motion } from "framer-motion";
 
 function About() {
   return (
     <motion.div 
-      className="green"
-      initial={{width: 0}}
-          animate={{width: "100%"}}
-          exit={{x: window.innerWidth,transition: {duration: 0.1}}}
+    initial={{ opacity: 0, width: 0 }}
+    animate={{ opacity: 1, width: "100%" }}
+   exit={{ opacity: 0, width: 0, scale: 1.5 }}
+  //  transition={{  duration: 5 }}
+    
 
 
     >
-      <Header />
-      <h1>About page</h1>
+      <Configrator />
     </motion.div>
   );
 }
